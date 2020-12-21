@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Futura", sans-serif;  
+}
+
+::selection {
+  background: #bfeeff; /* WebKit/Blink Browsers */
+}
+
+body {
+    background-color: white;
+}
+
+
+/*------------------Nav Bar--------------*/
+h4 {
+	font-weight: 300;
+}
+
+.container{
+    clear:both;
+    overflow:auto;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    position: fixed;
+    height: 100px;
+    z-index: 1;
+    background-color: white;
+}
+
+nav{
+    float:right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo img{
+    float:left;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #f50900;
+    font-weight: 600;
+    width: 35px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.logo img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.logo a.active{color: #f50900;}
+
+nav ul li{
+    display: inline-block; 
+    padding: 20px 8px;
+    font-size: 16px;
+    color: #f44336;
+    text-align: center;
+}
+
+nav ul li:hover, a:hover{
+    color: #f44336;
+}
+
+nav ul li:active{
+    color: black;
+}
+
+nav ul a.active{
+    color: #222222;
+}
+
+nav ul a {
+    color: #333333;
+    font-weight: 400;
+    text-decoration: none;
+}
+/* Text Classes ----------------------------------------------------- */
+.topic {
+	color: #333333;
+	font-size: 40px;
+	font-weight: 600;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.quote {
+	color: #222222;
+	width: 80%;
+    margin: auto;
+	font-weight: 600;
+    line-height: 1.5;
+    padding: 20px;
+}
+.subtopic {
+	color: #222222;
+	font-weight: 600;
+	line-height: 1;
+    padding: 10px 0px 0px 20px;
+}
+.subsubtopic {
+	color: orange;
+	font-weight: 100;
+	padding-top: 20px;
+	line-height: 0.5;
+}
+.paragraph {
+	color: #333333;
+	line-height: 1.6;
+	font-weight: 100;
+    /*font-size: 15px;*/
+    padding: 15px 20px 20px 20px;
+}
+#blue_word_2 {
+    color: orange;
+    line-height: 10px;
+}
+.three_needs {
+	height: 200px;
+	margin: auto;
+	/*border: 2px solid black;*/
+	box-sizing: border-box;
+}
+
+/*-------------Title-----------*/
+.title-wrapper {
+    box-sizing: border-box;
+    margin: 200px 0 50px auto;
+    width: 100%;
+    height: 250px;
+}
+
+.title {
+    float: left;
+}
+
+.title h1 {
+    font-weight: bolder; 
+    font-size: 60px;
+}
+
+.title h3 {
+    width:100%; 
+    font-size: 20px; 
+    margin-top: -15px; 
+    font-weight: 100;
+}
+
+.description {
+    float: left;
+}
+
+
+.bolder {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.lighter {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.banner-img img{
+    width: 100%;
+}
+/*-------------INTRO-------------------------------------------------------*/
+
+.intro-wrapper {
+    width: 95%;
+    height: auto; 
+    margin: 100px auto 0px auto;
+    box-sizing: border-box;
+}
+
+.preface {
+    clear: both;
+    width: 95%;
+    height: auto;
+    margin: 50px auto 0px auto;
+}
+
+/*------------Bar-PHONE---------------*/
+.bar {
+    display: none;
+}
+
+
+
+/*-----------Research-PHONE----------------*/
+.research {
+    width: 95%;
+    height: auto;
+    margin: 100px auto 0px auto;
+}
+
+.research img {
+    width: 100%;
+}
+
+
+/*-----------Ideation-PHONE----------------*/
+.ideation {
+    background-color: #F6F6F6;
+	width: 95%;
+	height: auto;
+    margin: 10px auto 0px auto;
+}
+
+.ideation img {
+    width: 100%;
+}
+
+.ideation-text {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 80px 0px 0px 0px;
+}
+
+
+/*------------Design-PHONE---------------------*/
+
+.design {
+    width: 95%;
+    margin: 100px auto 65px auto;
+    height: auto;
+}
+
+.design img {
+    width: 100%;
+}
+
+/*-----------Results---PHONE--------------------*/
+
+.results {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.results-text {
+    width: 95%;
+    margin: auto;
+    padding-top: 75px;
+}
+
+.results img {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0px 50px 0px;
+    padding-bottom: 100px;
+}
+
+/*------------Showcase--PHONE---------------*/
+
+.showcase-wrapper {
+    width: 95%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    box-sizing: border-box;
+    display: none;
+}
+
+.showcase-left {
+    width: 48%;
+    height: 500px;
+    float: left;
+    display: block;
+    text-align: center;
+        
+}
+
+.showcase-right {
+    width: 48%;
+    height: 500px;
+    float: right;
+    display: block;
+    text-align: center;
+    
+}
+
+.showcase-text {
+    margin: 180px auto 100px auto;
+    text-align: left;
+    width: 80%;
+}
+
+.showcase-topic {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.showcase-paragraph {
+    color: #333333;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+
+/*-----------Takeaways----PHONE-----------*/
+
+.takeaways {
+    width: 95%;
+    height: auto;
+    margin: 50px auto 0px auto;
+}
+
+.intro-img {
+    float: right;
+    width: 300px;
+    height: 600px;
+    margin: 150px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+.contact {
+    background-color: #F6F6F6;
+    width: 95%;
+    height: auto;
+    margin: 10px auto 0px auto;
+    padding: 50px 0px 10px 0px;
+}
+
+.contact-text {
+    width: 95%;
+    margin: 50px auto 50px auto;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    background-color: white;
+    clear: both;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f44336;
+}
+
+.footer a:hover {
+    color: #222222; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------*/
+@media only screen and (min-width: 1080px) {
+    
+    /* Text Classes ----------------------------------------------------- */
+.topic {
+	color: #333333;
+	font-size: 40px;
+	font-weight: 600;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.quote {
+	color: #222222;
+	width: 80%;
+    margin: auto;
+	font-weight: 600;
+    line-height: 1.5;
+    padding: 20px;
+}
+.subtopic {
+	color: #222222;
+	font-weight: 600;
+	line-height: 1;
+    padding: 10px 0px 0px 20px;
+}
+.subsubtopic {
+	color: orange;
+	font-weight: 100;
+	padding-top: 20px;
+	line-height: 0.5;
+}
+.paragraph {
+	color: #333333;
+	line-height: 1.6;
+	font-weight: 100;
+    padding: 15px 20px 20px 20px;
+}
+#blue_word_2 {
+    color: orange;
+    line-height: 10px;
+}
+.three_needs {
+	height: 200px;
+	margin: auto;
+	/*border: 2px solid black;*/
+	box-sizing: border-box;
+}
+/*--------------Nav Bar------------------------------------------------------*/
+.container{
+        clear:both;
+        overflow:auto;
+        width: 100%;
+        margin: auto;
+        top: 0;
+        position: fixed;
+        height: 85px;
+        background-color: white;
+    }
+
+    nav{
+        float:right;
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .logo img{
+        float:left;
+        margin-left: 50px;
+        margin-top: 22px;
+        color: #f50900;
+        font-weight: 600;
+        width: 40px;
+        text-align: center;
+    }
+
+    .logo a.active{color: #f50900;}
+
+    nav ul li{
+        display: inline-block; 
+        padding: 15px 12px;
+        font-size:17px; 
+        color: #222222;
+        text-align: center;
+    }
+
+
+
+
+
+/*-------------Title-LAPTOP----------*/
+.title-wrapper {
+    box-sizing: border-box;
+    margin: 200px auto 50px auto;
+    width: 1008px;
+    height: 250px;
+}
+
+.title {
+    float: left;
+}
+
+.title h1 {
+    font-weight: bolder; 
+    font-size: 80px;
+}
+
+.title h3 {
+    width:450px; 
+    font-size: 25px; 
+    margin-top: -15px; 
+    font-weight: 100;
+}
+
+.description {
+    float: right;
+}
+
+
+.bolder {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lighter {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/*-----------Intro-LAPTOP----------------*/
+
+.intro-wrapper {
+    width: 900px;
+    height: auto; 
+    margin: 100px auto 0px auto;
+    box-sizing: border-box;
+}
+
+.intro-text-left {
+    width: 60%;
+    float: left;
+}
+.preface {
+    clear: both;
+    width: 900px;
+    height: auto;
+    margin: 50px auto 0px auto;
+}
+
+/*------------Bar-LAPTOP---------------*/
+.bar {
+    clear: both;
+	background: black;
+	height: 200px;
+	width: 100%;
+    margin-top: 50px;
+}
+
+#bar_title {
+    margin: auto;
+	padding-top: 60px;
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+#bar_words {
+    margin: auto;
+	padding-top: 15px;
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+
+
+/*-----------Research-LAPTOP----------------*/
+.research {
+    width: 900px;
+    height: auto;
+    margin: 100px auto 0px auto;
+}
+    
+.research img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*-----------Ideation-LAPTOP----------------*/
+.ideation {
+	width: 100%;
+	height: auto;
+    margin: 10px auto 0px auto;
+}
+    
+.ideation-text {
+    width: 1008px;
+    height: auto;
+    margin: auto;
+    padding: 80px 0px 0px 0px;
+    
+}
+
+    
+/*---------Design-LAPTOP-----------------*/
+
+.design {
+    width: 900px;
+    margin: 100px auto 65px auto;
+    height: auto;
+}
+    
+/*---------Results-LAPTOP-------------------*/
+
+.results {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+    
+.results-text {
+    width: 1200px;
+    margin: auto;
+    padding-top: 75px;
+}
+    
+.results-img {
+    width: 1200px;
+    display: block;
+    text-align: center;
+    margin: 10px auto 50px auto;
+    padding-bottom: 30px;
+}
+    
+    
+/*----------Showcase-LAPTOP----------------*/
+
+.showcase-wrapper {
+    width: 1008px;
+    height: 1700px;
+    margin: 50px auto 0px auto;
+    box-sizing: border-box;
+    display: block;
+}
+    
+.showcase-left {
+    width: 48%;
+    height: 500px;
+    float: left;
+    display: block;
+    text-align: center;
+        
+}
+
+.showcase-right {
+    width: 48%;
+    height: 500px;
+    float: right;
+    display: block;
+    text-align: center;
+    
+}
+    
+.showcase-text {
+    margin: 180px auto 100px auto;
+    text-align: left;
+    width: 80%;
+}
+
+.showcase-topic {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.showcase-paragraph {
+    color: #333333;
+	line-height: 1.6;
+	font-weight: 300;
+}
+    
+/*---------Takeaways-LAPTOP---------------*/
+
+.takeaways {
+    width: 1008px;
+    height: auto;
+    margin: 50px auto 50px auto;
+}
+    
+/*--------Contact-LAPTOP-------------------*/
+
+.contact {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0px auto;
+    padding: 50px 0px 10px 0px;
+}
+
+.contact-text {
+    width: 1008px;
+    margin: 50px auto 50px auto;
+}
+
+
+/*------Footer-LAPTOP--------------------*/
+
+.footer {
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    background-color: white;
+    clear: both;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f44336;
+}
+
+.footer a:hover {
+    color: #222222; 
+}
+    
+
+.intro-img {
+    float: right;
+    width: 300px;
+    height: 600px;
+    margin: 150px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
