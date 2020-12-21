@@ -1,0 +1,422 @@
+* {
+	margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Futura", sans-serif;
+}
+
+::selection {
+  background: #bfeeff; /* WebKit/Blink Browsers */
+}
+
+body {
+    background-color: white;
+}
+
+
+/*------------------Nav Bar--------------*/
+h4 {
+	font-weight: 300;
+}
+
+.container{
+    clear:both;
+    overflow:auto;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    position: fixed;
+    height: 100px;
+    z-index: 1;
+    background-color: white;
+}
+
+nav{
+    float:right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo img{
+    float:left;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #f50900;
+    font-weight: 600;
+    width: 35px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.logo img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.logo a.active{color: #f50900;}
+
+nav ul li{
+    display: inline-block; 
+    padding: 20px 8px;
+    font-size: 16px;
+    color: #f44336;
+    text-align: center;
+}
+
+nav ul li:hover, a:hover{
+    color: #f44336;
+}
+
+nav ul li:active{
+    color: black;
+}
+
+nav ul a.active{
+    color: #222222;
+}
+
+nav ul a {
+    color: #333333;
+    font-weight: 400;
+    text-decoration: none;
+}
+/*-------------Intro-------------------*/
+#intro {
+    height: 250px;
+    width: 90%;
+    margin: 150px auto 50px auto;
+}
+
+#intro-text {
+    float: left;
+    margin-top: 50px;
+}
+
+#intro h2 {
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: -1px;
+    background: -webkit-linear-gradient(45deg, #FF7919, #E53935);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  /* Fallback: Set a background color. */
+  background-color: #f44336;
+  
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.2s ease forwards;
+}
+
+#intro h2:hover {
+    animation: rainbow-text-simple-animation 0.2s ease-in forwards;
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+#intro h3 {
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 18px; 
+    color: #222222
+}
+
+#intro a {
+    text-decoration: none;
+    color: black;
+}
+
+#intro a:hover {
+    color: dodgerblue;
+}
+
+#balloonme {
+    display: none;
+}
+/*-----------Work Box------------------*/
+.workbox_wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.workbox_left {
+    width: 100%;
+    height: 480px;
+    margin: auto;
+}
+
+.workbox_left img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.workbox_right {
+    width: 100%;
+    height: 480px;
+    margin: auto;
+}
+
+.workbox_right img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+
+.workbox_left img:hover{
+/*-webkit-transform: scale(1.02);
+-ms-transform: scale(1.02);
+transform: scale(1.02);
+transition: 0.3s ease;*/
+    box-shadow:
+        1px 1px #bfeeff,
+        2px 2px #bfeeff,
+        3px 3px #bfeeff,
+        4px 4px #bfeeff,
+        5px 5px #bfeeff,
+        6px 6px #bfeeff;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+        overflow: hidden;
+}
+
+.workbox_right img:hover{
+    box-shadow:
+        1px 1px #bfeeff,
+        2px 2px #bfeeff,
+        3px 3px #bfeeff,
+        4px 4px #bfeeff,
+        5px 5px #bfeeff,
+        6px 6px #bfeeff;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+        overflow: hidden;
+}
+
+
+.workbox_words {
+    width: 90%;
+    height: 100px;
+    margin: left;
+    padding-top: 15px;
+    /*border: 2px solid orange;*/
+}
+
+.workbox_words h1 {
+    font-size: 25px; /*prev: 21px*/
+}
+
+.workbox_words h4 {
+    width: 100%;
+    font-size: 16px;
+}
+
+.workbox_words a {
+    text-decoration: none;
+    color: #f44336;
+}
+
+.workbox_words a:hover {
+    font-weight: 1000;
+    color: dodgerblue;
+}
+
+/*--------------------Footer------------------------------*/
+
+.footer {
+    width: 80%;
+    margin: auto;
+    height: 250px;
+    clear: both;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f44336;
+}
+
+.footer a:hover {
+    color: #222222;
+}
+
+.footer h5 {
+    float: left;
+    margin-top: 10px;
+    font-weight: 100;"
+}
+
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+
+@media only screen and (min-width: 1080px) {
+
+/*---------------------NAV-----------------------*/
+    .container{
+        clear:both;
+        overflow:auto;
+        width: 100%;
+        margin: auto;
+        top: 0;
+        position: fixed;
+        height: 85px;
+        background-color: white;
+    }
+
+    nav{
+        float:right;
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .logo img{
+        float:left;
+        margin-left: 50px;
+        margin-top: 22px;
+        color: #f50900;
+        font-weight: 600;
+        width: 40px;
+        text-align: center;
+    }
+
+    .logo a.active{color: #f50900;}
+
+    nav ul li{
+        display: inline-block; 
+        padding: 15px 12px;
+        font-size:17px; 
+        color: #222222;
+        text-align: center;
+    }
+
+    nav ul li:active{
+        color: black;
+    }
+
+    /*-------------Intro------------------*/
+
+    #intro {
+        height: 550px;
+        width: 1300px; /*prev: 1100px*/
+        margin: 200px auto 50px auto;
+    }
+    
+    
+    #intro h2 {
+        color: #f44336;
+        font-weight: bolder;
+        font-size: 85px;
+        letter-spacing: -1px;
+    }
+
+    #intro h3 {
+        font-weight: 400;
+        line-height: 1.7;
+        font-size: 23px; /*prev: 21px*/
+        width: 700px;
+    }
+    
+    #balloonme {
+        display: block;
+        float: right;
+        width: 400px;
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    
+    @keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+    /*-----------------------------*/
+    
+    .workbox_wrapper {
+        width: 1300px; /*prev: 1100px*/
+    }
+    
+    .workbox_left {
+        width: 625px;
+        height: 600px;
+        margin: 10px 10px 40px 0px;
+        float: left;
+    }
+    
+    .workbox_right {
+        width: 625px;
+        height: 600px;
+        margin: 10px 0px 40px 10px;
+        float: right;
+    }
+    
+    /*------------------------------*/    
+    .footer h5 {
+        float: right;
+        margin-top: 2px;
+    }
+    
+    
+
+}
+
+
+
+
+
+
